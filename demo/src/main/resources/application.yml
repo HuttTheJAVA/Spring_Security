@@ -1,0 +1,24 @@
+spring: #띄어쓰기 없음
+  h2:
+    console:
+      enabled: true  # H2 Console을 사용할지 여부 (H2 Console은 H2 Database를 UI로 제공해주는 기능)
+      path: /h2-console  # H2 Console의 Path
+    # Database Setting Info (Database를 H2로 사용하기 위해 H2연결 정보 입력)
+  datasource: #띄어쓰기 2칸
+    url: jdbc:h2:tcp://localhost/~/ITGMA #4칸
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  jpa: #띄어쓰기 2칸
+    hibernate: #띄어쓰기 4칸
+      ddl-auto: create #띄어쓰기 6칸
+    properties: #띄어쓰기 4칸
+      hibernate: #띄어쓰기 6칸
+        # show_sql: true #띄어쓰기 8칸
+        format_sql: true #띄어쓰기 8칸
+#  thymeleaf:
+#    cache: false
+#    prefix: classpath:/templates/
+logging.level: #띄어쓰기 없음
+  org.hibernate.SQL: debug #띄어쓰기 2칸
+  org.hibernate.orm.jdbc.bind: trace
